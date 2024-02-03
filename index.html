@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dish Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div id="logo">
+                    <!-- Your logo goes here -->
+                    <img src="https://t3.ftcdn.net/jpg/03/74/73/78/360_F_374737839_VsxlmnN7soqOOOFFzy5kfE9H6PFMCkPX.jpg" alt="Logo">
+                </div>
+                
+                <ul id="navItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!-- Add more navigation items as needed -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Search bar for category search -->
+            <div id="searchBar">
+                <h2>Explore Delicious Dishes</h2>
+
+                <!-- Search bar content -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search by category...">
+                    <button id="searchButton">Search</button>
+                </div>
+            </div>
+
+            <!-- Add the description section here -->
+            <div id="description">
+                <h2>Welcome to Random Dish Generator</h2>
+                <p>Explore the world of culinary delights with our Random Dish Generator. From savory mains to sweet treats, let the randomness guide you to new and exciting recipes. Click on the images to discover cooking instructions and ingredients. Use the search bar to narrow down your culinary adventure.</p>
+            </div>
+
+            <div id="randomDish" class="dish-container">
+                <!-- Random dish content will go here -->
+            </div>
+
+            <!-- Modal for recipe details -->
+            <div id="recipeDetails" class="modal">
+                <!-- Recipe details will be displayed here -->
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <h2 id="modalDishTitle"></h2>
+                    <ul id="modalIngredients"></ul>
+                    <ol id="modalSteps"></ol>
+                    <p id="modalInstructions"></p>
+                </div>
+            </div>
+
+            <!-- Search results container -->
+            <div id="searchResults" class="dish-container">
+                <h2 id="searchTitle"></h2>
+                <div id="searchMeals" class="dish-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Random Dish Generator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js">
+        
+    </script>
+</body>
+</html>
